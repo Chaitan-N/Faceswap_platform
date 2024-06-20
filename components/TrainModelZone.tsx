@@ -310,7 +310,10 @@ export default function TrainModelZone() {
             </div>
           )}
 
-          <Button type="submit" className="w-full" isLoading={isLoading}>
+          <Button
+            type="submit"
+            className="w-full bg-sky-600 hover:bg-sky-700"
+            isLoading={isLoading}>
             iniciar sesión de fotos{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>

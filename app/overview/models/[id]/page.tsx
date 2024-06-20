@@ -38,7 +38,10 @@ export default async function Index({ params }: { params: { id: string } }) {
     .select("*")
     .eq("modelId", model.id);
 
-  const { data: samples } = await supabase.from("samples").select("*").eq("modelId", model.id);
+  const { data: samples } = await supabase
+    .from("samples")
+    .select("*")
+    .eq("modelId", model.id);
 
   return (
     <div id="train-model-container" className="w-full h-full">
@@ -46,7 +49,7 @@ export default async function Index({ params }: { params: { id: string } }) {
         <Link href="/overview" className="text-xs w-fit">
           <Button variant={"outline"} className="text-xs" size="sm">
             <FaArrowLeft className="mr-2" />
-            Go Back
+            atras
           </Button>
         </Link>
         <div className="flex flex-row gap-2 align-middle text-center items-center pb-4">
@@ -54,9 +57,8 @@ export default async function Index({ params }: { params: { id: string } }) {
           <div>
             <Badge
               variant={model.status === "finished" ? "default" : "secondary"}
-              className="text-xs font-medium"
-            >
-              {model.status === "processing" ? "training" : model.status }
+              className="text-xs font-medium">
+              {model.status === "processing" ? "training" : model.status}
               {model.status === "processing" && (
                 <Icons.spinner className="h-4 w-4 animate-spin ml-2 inline-block" />
               )}
@@ -65,7 +67,11 @@ export default async function Index({ params }: { params: { id: string } }) {
         </div>
       </div>
 
-      <ClientSideModel samples={samples ?? []} serverModel={model} serverImages={images ?? []} />
+      <ClientSideModel
+        samples={samples ?? []}
+        serverModel={model}
+        serverImages={images ?? []}
+      />
     </div>
   );
 }

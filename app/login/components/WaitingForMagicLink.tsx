@@ -13,11 +13,11 @@ export const WaitingForMagicLink = ({
           <h1 className="text-xl">Controleer je e-mail om door te gaan</h1>
           <div className="flex flex-col gap-2">
             <p className="text-sm">
-              We hebben je een magic link gemaild waarmee je toegang krijgt tot
-              je account.
+              Le hemos enviado por correo electrónico un enlace mágico que le
+              dará acceso a su cuenta.
             </p>
             <p className="text-xs opacity-60">
-              Tip: mogelijk bevindt deze zich in je spam map.
+              Consejo: puede que esté en tu carpeta de spam.{" "}
             </p>
           </div>
           <div>
