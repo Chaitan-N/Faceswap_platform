@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export default function PricingSection() {
   return (
     <div className="w-full max-w-6xl mt-16 mb-16 p-8 rounded-lg space-y-8">
-      <h2 id="Prijs" className=" text-3xl font-bold text-center mb-8">
+      <h2 id="Precio" className=" text-3xl font-bold text-center mb-8">
         Prijzen
       </h2>
       <div className="flex flex-wrap justify-center lg:space-x-4 space-y-4 lg:space-y-0 items-stretch">

@@ -61,8 +61,8 @@ export default async function Navbar() {
         </Link>
       </div>
       <div className="md:block hidden  lg:ml-auto align-items: flex-end; flex justify-end">
-        <Link href="/#Prijs">
-          <Button variant={"ghost"}>Prijs</Button>
+        <Link href="/#Precio">
+          <Button variant={"ghost"}>Precio</Button>
         </Link>
         <Link href="/#Faq">
           <Button variant={"ghost"}>Faq</Button>
@@ -70,15 +70,15 @@ export default async function Navbar() {
         <Link href="/blog">
           <Button variant={"ghost"}>Blog</Button>
         </Link>
-        <Link href="/contact">
-          <Button variant={"ghost"}>Contact</Button>
+        <Link href="/contacto">
+          <Button variant={"ghost"}>Contacto</Button>
         </Link>{" "}
       </div>
       {user && (
         <div className=" flex flex-row lg:ml-auto  gap-2 ">
           {stripeIsConfigured && (
             <Link href="/get-credits">
-              <Button variant={"ghost"}>Credits kopen</Button>
+              <Button variant={"ghost"}>compra creditos</Button>
             </Link>
           )}
         </div>
@@ -87,7 +87,7 @@ export default async function Navbar() {
         {!user && (
           <Link href="/login" className="md:block hidden">
             <Button className="text-white bg-sky-600 hover:bg-sky-700 w-full border rounded-full">
-              Inloggen / Registreren
+              Iniciar sesión / Registrarse{" "}
             </Button>
           </Link>
         )}{" "}
