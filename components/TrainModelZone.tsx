@@ -193,7 +193,7 @@ export default function TrainModelZone() {
             name="name"
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Nombre</FormLabel>
                 <FormDescription>
                   Asigne un nombre a su modelo para que pueda identificarlo
                   fácilmente más adelante.{" "}

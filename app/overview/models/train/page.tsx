@@ -19,15 +19,14 @@ export default async function Index() {
         <Link href="/overview" className="text-sm w-fit">
           <Button className="bg-sky-600 hover:bg-sky-700">
             <FaArrowLeft className="mr-2" />
-            Terug
+            Atras{" "}
           </Button>
         </Link>
         <Card>
           <CardHeader>
             <CardTitle>Begin jouw fotosessie</CardTitle>
             <CardDescription>
-              Kies een naam, een type en upload enkele foto's om aan de slag te
-              gaan.{" "}
+              Elige un nombre, un tipo y sube algunas fotos para empezar.{" "}
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">

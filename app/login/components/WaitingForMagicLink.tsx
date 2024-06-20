@@ -23,7 +23,7 @@ export const WaitingForMagicLink = ({
           <div>
             <Button onClick={toggleState} variant="secondary" size="sm">
               <ArrowLeft size={14} />
-              Terug
+              Atras{" "}
             </Button>
           </div>
         </div>
