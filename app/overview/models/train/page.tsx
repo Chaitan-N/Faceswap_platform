@@ -15,19 +15,19 @@ export default async function Index() {
     <div className="w-full max-w-2xl mx-auto">
       <div
         id="train-model-container"
-        className="flex flex-1 flex-col gap-2 px-2"
-      >
+        className="flex flex-1 flex-col gap-2 px-2">
         <Link href="/overview" className="text-sm w-fit">
-          <Button variant={"outline"}>
+          <Button className="bg-sky-600 hover:bg-sky-700">
             <FaArrowLeft className="mr-2" />
-            Go Back
+            Terug
           </Button>
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Train Model</CardTitle>
+            <CardTitle>Begin jouw fotosessie</CardTitle>
             <CardDescription>
-              Choose a name, type, and upload some photos to get started.
+              Kies een naam, een type en upload enkele foto's om aan de slag te
+              gaan.{" "}
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">
