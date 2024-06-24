@@ -7,7 +7,6 @@ import hero2 from "/public/hero2.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
-import Guia from "@/components/Guia";
 
 export const dynamic = "force-dynamic";
 
@@ -53,7 +52,7 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection /> <Faq />
-      <Guia />
+      <div className="pr-45"></div>
     </div>
   );
 }

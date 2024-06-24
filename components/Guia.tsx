@@ -11,9 +11,16 @@ import React from "react";
 
 function Guia() {
   return (
-    <div>
+    <div className="flex justify-start ">
       <Dialog>
-        <DialogTrigger>Open</DialogTrigger>
+        <DialogTrigger>
+          <Image
+            src="/guia.png"
+            width={200}
+            height={200}
+            alt="Picture of the author"
+          />
+        </DialogTrigger>
         <DialogContent className="overflow-y-scroll  max-h-screen">
           <Image
             src="/modal.png"
