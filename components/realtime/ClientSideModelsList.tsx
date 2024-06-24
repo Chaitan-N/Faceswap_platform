@@ -62,7 +62,7 @@ export default function ClientSideModelsList({
           <div className="flex flex-row gap-4 w-full justify-between items-center text-center">
             <h1>Your models</h1>
             <Link href="/overview/models/train" className="w-fit">
-              <Button size={"sm"}>Train model</Button>
+              <Button size={"sm"}>Iniciar sesión de fotos</Button>
             </Link>
           </div>
           <ModelsTable models={models} />
@@ -72,12 +72,12 @@ export default function ClientSideModelsList({
         <div className="flex flex-col gap-4 items-center">
           <FaImages size={64} className="text-gray-500" />
           <h1 className="text-2xl">
-            Comienza con tu primera sesión de fotos.{" "}
+            👉 Compra créditos y comienza tu primera sesión de fotos..{" "}
           </h1>
           <div>
             <Link href="/overview/models/train">
               <Button className="bg-sky-600 hover:bg-sky-700">
-                Train model
+                Iniciar sesión de fotos
               </Button>
             </Link>
           </div>

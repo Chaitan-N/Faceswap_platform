@@ -24,7 +24,7 @@ export default async function Index() {
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Begin jouw fotosessie</CardTitle>
+            <CardTitle>Comienza tu sesión de fotos</CardTitle>
             <CardDescription>
               Elige un nombre, un tipo y sube algunas fotos para empezar.{" "}
             </CardDescription>
