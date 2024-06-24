@@ -106,7 +106,7 @@ export default function FAQ() {
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-            <h2 className="font-medium">Hoe kan ik mijn fotos downloaden? </h2>
+            <h2 className="font-medium">¿Cómo puedo descargar mis fotos? </h2>
 
             <span className="relative h-5 w-5 shrink-0">
               <svg

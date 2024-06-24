@@ -16,8 +16,8 @@ function Guia() {
         <DialogTrigger>
           <Image
             src="/guia.png"
-            width={200}
-            height={200}
+            width={180}
+            height={180}
             alt="Picture of the author"
           />
         </DialogTrigger>
