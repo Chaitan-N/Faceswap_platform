@@ -7,7 +7,6 @@ import { Analytics } from "@vercel/analytics/react";
 import dynamic from "next/dynamic";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { CookieConsent } from "@/components/CookieConsent";
-import Guia from "@/components/Guia";
 
 const CrispWithNoSSR = dynamic(() => import("@/components/crisp"));
 
@@ -34,7 +33,6 @@ export default function RootLayout({ children }: any) {
         <main className="flex flex-1 flex-col items-center py-16">
           {children}
         </main>
-        <Guia />
         <Footer />
         <Toaster />
         <Analytics /> <CrispWithNoSSR />
