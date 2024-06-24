@@ -8,7 +8,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaImages } from "react-icons/fa";
 import ModelsTable from "../ModelsTable";
-import Guia from "@/components/Guia";
 export const revalidate = 0;
 
 type ClientSideModelsListProps = {
@@ -72,7 +71,6 @@ export default function ClientSideModelsList({
         <div className="flex flex-col gap-4 items-center">
           <FaImages size={64} className="text-gray-500" />
           <h1 className="text-2xl">
-            <Guia />
             Comienza con tu primera sesión de fotos.{" "}
           </h1>
           <div>
