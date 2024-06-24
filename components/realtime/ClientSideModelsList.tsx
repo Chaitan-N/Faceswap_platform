@@ -83,9 +83,7 @@ export default function ClientSideModelsList({
           </div>
         </div>
       )}
-      <div>
-        <Guia />
-      </div>
+      <Guia />
     </div>
   );
 }

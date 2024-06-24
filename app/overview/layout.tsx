@@ -1,7 +1,6 @@
 import Login from "../login/page";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
-import Guia from "@/components/Guia";
 
 export const dynamic = "force-dynamic";
 
