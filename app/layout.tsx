@@ -11,14 +11,14 @@ import { CookieConsent } from "@/components/CookieConsent";
 const CrispWithNoSSR = dynamic(() => import("@/components/crisp"));
 
 export const metadata = {
-  title: "Professionele Portetfoto's maken met AI",
+  title: "Toma fotografías de retratos profesionales con IA",
   description:
-    "Vergeet studio's en fotosessies. Makkelijk vanaf thuis of je werk. Bespaar tijd en geld.",
+    "Olvídate de los estudios y las sesiones de fotos. Fácilmente desde casa o trabajo. Ahorra tiempo y dinero.",
 };
 
 export default function RootLayout({ children }: any) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       {" "}
       <GoogleAnalytics gaId="G-RDJTQ9X4WR" />
       <body className="min-h-screen flex flex-col">

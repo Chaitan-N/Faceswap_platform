@@ -7,6 +7,7 @@ import hero2 from "/public/hero2.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
+import Guia from "@/components/Guia";
 
 export const dynamic = "force-dynamic";
 
@@ -30,8 +31,6 @@ export default async function Index() {
             usando IA✨
           </h1>
           <p className="text-gray-600 text-xl">
-            ¡Olvídate de los costosos estudios y las incómodas sesiones de
-            fotos! <br />
             Genere fotografías de retratos profesionales de negocios con calidad
             de estudio HD que son mucho más baratos y no requieren tiempo ni
             desplazamientos, fácilmente desde casa o trabajo.
@@ -54,6 +53,7 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection /> <Faq />
+      <Guia />
     </div>
   );
 }

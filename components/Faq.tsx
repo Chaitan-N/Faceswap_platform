@@ -3,7 +3,9 @@ import React from "react";
 export default function FAQ() {
   return (
     <div className=" px-6	mt-16 mb-16 ">
-      <h2 id="Faq" className="text-3xl font-bold text-center mb-8">
+      <h2
+        id="Faq"
+        className="scroll-smooth text-3xl font-bold text-center mb-8">
         Preguntas frecuentes
       </h2>
       <div className="w-full max-w-3xl space-y-4">
