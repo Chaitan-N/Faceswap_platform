@@ -11,7 +11,7 @@ import { CookieConsent } from "@/components/CookieConsent";
 const CrispWithNoSSR = dynamic(() => import("@/components/crisp"));
 
 export const metadata = {
-  title: "Toma fotografías de retratos profesionales con IA",
+  title: "Retratos profesionales con IA | Sesiondefotos.ai",
   description:
     "Olvídate de los estudios y las sesiones de fotos. Fácilmente desde casa o trabajo. Ahorra tiempo y dinero.",
 };
