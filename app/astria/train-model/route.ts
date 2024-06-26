@@ -24,10 +24,20 @@ export async function POST(request: Request) {
   const name = payload.name;
 
   const supabase = createRouteHandlerClient<Database>({ cookies });
+  const tune_id: string = "690204";
 
   const {
     data: { user },
   } = await supabase.auth.getUser();
+
+  if (!user) {
+    return NextResponse.json(
+      {
+        message: "Unauthorized",
+      },
+      { status: 401 }
+    );
+  }
 
   if (!user) {
     return NextResponse.json(
@@ -118,10 +128,10 @@ export async function POST(request: Request) {
 
   try {
     const trainWebhook = `https://${process.env.VERCEL_URL}/astria/train-webhook`;
-    const trainWebhookWithParams = `${trainWebhook}?user_id=${user.id}&webhook_secret=${appWebhookSecret}`;
+    const trainWebhookWithParams = `${trainWebhook}?user_id=${user.id}&tune_id=${tune_id}&webhook_secret=${appWebhookSecret}`;
 
     const promptWebhook = `https://${process.env.VERCEL_URL}/astria/prompt-webhook`;
-    const promptWebhookWithParams = `${promptWebhook}?user_id=${user.id}&webhook_secret=${appWebhookSecret}`;
+    const promptWebhookWithParams = `${promptWebhook}?user_id=${user.id}&tune_id=${tune_id}&webhook_secret=${appWebhookSecret}`;
 
     const API_KEY = astriaApiKey;
     const DOMAIN = "https://api.astria.ai";
